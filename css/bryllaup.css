@@ -12,58 +12,39 @@
   --shadow:   #333333;
 }
 
-* {
- font-family: 'Average Sans' , 'Playball', 'Lobster Two', 'Itim', 'Average Sans';
- border: none;
-}
-
-*:hover {
-
-}
-
-h2, h3 {
-  font-family: 'Average';
-  line-height: 1.15;
-}
-
-.n {
-  color: red;
-}
+* { font-family: 'Average Sans', 'Playball', 'Lobster Two', 'Itim', sans-serif; border: none; }
+*:hover {}
+h2, h3 { font-family: 'Ubuntu Light', sans-serif; line-height: 1.25; margin: 12px; }
+h1 { line-height: 1.15; margin: 12px 0; /* margin: 0px 5px; */ }
+.n { color: red; }
 
 body {
+  height: 100vh;
   background-color: var(--accent-2);
   background-image: url("../img/pla060.jpg");
   background-size: cover;
   display: grid;
   grid-template-areas:
     'header header header header'
-    'left-margin left-main right-main right-margin'
+    'left-margin middle-main middle-main right-margin'
     'footer footer footer footer';
-  grid-template-rows: 0px calc(100vh - 0px) 0px;
-  grid-template-columns: auto 500px 500px auto;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto 350px 350px auto;
 }
 
 #header {
   grid-area: header;
   background-color: var(--accent);
-  box-shadow: 0 0 2px var(--shadow);
+  padding: 4px 8px;
 }
 
-#info {
-  grid-area: left-main;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  background-color: var(--dark-5);
-  backdrop-filter: blur(20px);
-  margin: 10px;
-  margin-right: 0;
-  border-radius: 8px;
+#main {
+  grid-area: middle-main;
 }
 
 .c {
-  width: calc(100% - 20px;);
-  margin: 10px;
+  /* width: calc(100% - 20px;); */
+  margin: 4px 4px;
   background: var(--light-d);
   box-shadow: 1px 1px 2px var(--shadow);
   border-radius: 8px;
@@ -71,28 +52,32 @@ body {
   text-align: center;
 }
 
-#links {
-  grid-area: right-main;
+.h {
+  margin: 4px 4px;
+  background: none;
+  text-shadow: 0 2px var(--shadow);
+  border-radius: 8px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+}
+
+#wishlist {
+  /* grid-area: middle-main; */
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   background-color: var(--light-b);
   backdrop-filter: blur(20px);
-  margin: 10px;
-  border-radius: 8px;
+  border-radius: 12px;
+  padding: 4px 4px;
 }
 
-#footer {
-  grid-area: footer;
-  background-color: var(--dark-1);
-  box-shadow: 0 0 2px var(--shadow);
-}
-
-#links > a {
+#wishlist > a {
   display: flex;
   height: 100px;
-  width: calc(100% - 20px);
-  margin: 10px 10px 0 10px;
+  width: 100%;
+  margin: 4px 0px;
   /* background: linear-gradient(var(--accent-1), var(--accent-2)); */
   background: var(--accent-1);
   box-shadow: 1px 1px 2px var(--shadow);
@@ -102,32 +87,96 @@ body {
   overflow: hidden;
 }
 
-#links > a:hover {
+#wishlist > a:hover {
   filter: brightness(1.1);
   cursor: not-allowed;
 }
 
-#links > a > img {
+a {
+  display: inline-block;
+  width: 220px;
+  height: 52px;
+  background: linear-gradient(40deg, #3397ff, #33cfff);
+  border-radius: 8px;
+  text-decoration: none;
+  line-height: 120%;
+  box-shadow: #777 0px 1px 1px;
+  transition: 100ms;
+}
+
+.a-small {
+  width: 160px;
+  height: 42px;
+  line-height: 50%;
+}
+
+a > p {
+  color: white;
+  text-decoration: none;
+  text-justify: auto;
+}
+
+a:hover {
+  background: linear-gradient(60deg, #3397ff, #33cfff);
+  filter: brightness(1.05);
+  transition: 100ms;
+}
+
+a:active {
+  background: linear-gradient(60deg, #3397ff, #33cfff);
+  filter: brightness(0.95);
+  transition: 25ms;
+}
+
+#info {
+  /* grid-area: middle-main; */
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  background-color: var(--dark-5);
+  backdrop-filter: blur(20px);
+  margin: 8px 0;
+  border-radius: 12px;
+  padding: 4px 4px;
+}
+
+#info > div {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+#info > div > div {
+  display: flex;
+  flex-flow: row nowrap; }
+
+
+#info > div > div > div {
+  flex: 1 1 0px;
+}
+
+/* #links > a > img {
   height: 102px;
   width: 102px;
   margin: -1px;
   background-size: cover;
-}
+} */
 
-.tilbords { background-image: url("../img/tilbords.png"); }
-.kitchn   { background-image: url("../img/kitchn.jpg"); }
-.jernia   { background-image: url("../img/jernia.jpg"); }
-.cg       { background-image: url("../img/cg.jpg"); }
-
-
-#links > a > p {
+/* #links > a > p {
+  width: 100%;
+  height: 100%;
   margin: 10px;
   padding: 10px;
-  font-size: 48px;
+  font-size: 32px;
+  text-align: center;
   color: var(--light-d);
   text-decoration: none;
-}
+} */
 
-#links > a:hover > p {
 
+
+#footer {
+  grid-area: footer;
+  /* background-color: var(--dark-1);
+  box-shadow: 0 0 2px var(--shadow); */
 }

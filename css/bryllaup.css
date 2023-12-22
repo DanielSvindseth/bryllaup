@@ -35,7 +35,7 @@ body {
 #header {
   grid-area: header;
   background-color: var(--accent);
-  padding: 4px 8px;
+  padding: 4px;
 }
 
 #main {
@@ -62,6 +62,37 @@ body {
   color: white;
 }
 
+#program {
+  /* grid-area: middle-main; */
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  background-color: var(--light-b);
+  backdrop-filter: blur(20px);
+  border-radius: 12px;
+  padding: 4px 4px;
+  margin-bottom: 4px;
+}
+
+#program > a {
+  display: flex;
+  height: 100px;
+  width: 100%;
+  margin: 4px 0px;
+  /* background: linear-gradient(var(--accent-1), var(--accent-2)); */
+  background: var(--accent-1);
+  box-shadow: 1px 1px 2px var(--shadow);
+  flex-flow: row nowrap;
+  text-decoration: none;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#program > a:hover {
+  filter: brightness(1.1);
+  cursor: not-allowed;
+}
+
 #wishlist {
   /* grid-area: middle-main; */
   display: flex;
@@ -71,6 +102,7 @@ body {
   backdrop-filter: blur(20px);
   border-radius: 12px;
   padding: 4px 4px;
+  margin-bottom: 4px;
 }
 
 #wishlist > a {

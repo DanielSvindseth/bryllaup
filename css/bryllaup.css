@@ -23,23 +23,28 @@ body {
   background-color: var(--accent-2);
   background-image: url("../img/pla060.jpg");
   background-size: cover;
+  background-attachment: fixed;
   display: grid;
   grid-template-areas:
     'header header header header'
     'left-margin middle-main middle-main right-margin'
     'footer footer footer footer';
-  grid-template-rows: auto auto auto;
+  grid-template-rows: 77px auto auto;
   grid-template-columns: auto 350px 350px auto;
 }
 
 #header {
-  grid-area: header;
+  width: calc(100vw - 8px);
+  position: fixed;
   background-color: var(--accent);
   padding: 4px;
+  z-index: 999;
 }
 
 #main {
   grid-area: middle-main;
+  /*width: 100%;
+  overflow-y: scroll;*/
 }
 
 .c {
@@ -71,7 +76,7 @@ body {
   backdrop-filter: blur(20px);
   border-radius: 12px;
   padding: 4px 4px;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 
 #program > a {
@@ -102,7 +107,7 @@ body {
   backdrop-filter: blur(20px);
   border-radius: 12px;
   padding: 4px 4px;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 
 #wishlist > a {
@@ -140,6 +145,23 @@ a {
   width: 160px;
   height: 42px;
   line-height: 50%;
+}
+
+a.disabled {
+  background: linear-gradient(40deg, #999999, #c3c3c3);
+  cursor: not-allowed;
+}
+
+a.disabled:hover {
+  background: linear-gradient(60deg, #999999, #c3c3c3);
+  filter: brightness(1);
+  transition: 100ms;
+}
+
+a.disabled:active {
+  background: linear-gradient(60deg, #999999, #c3c3c3);
+  filter: brightness(1);
+  transition: 25ms;
 }
 
 a > p {

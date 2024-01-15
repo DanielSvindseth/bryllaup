@@ -1,0 +1,100 @@
+@font-face {
+font-family: 'Operator Mono Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Operator Mono Bold'), url('../fonts/OperatorMono/OperatorMono-Bold.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Operator Mono Bold Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Operator Mono Bold Italic'), url('../fonts/OperatorMono/OperatorMono-BoldItalic.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Operator Mono Extra Light';
+font-style: normal;
+font-weight: normal;
+src: local('Operator Mono Extra Light'), url('../fonts/OperatorMono/OperatorMono-XLight.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Operator Mono Extra Light Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Operator Mono Extra Light Italic'), url('../fonts/OperatorMono/OperatorMono-XLightItalic.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Operator Mono Light';
+font-style: normal;
+font-weight: normal;
+src: local('Operator Mono Light'), url('../fonts/OperatorMono/OperatorMono-Light.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Operator Mono Light Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Operator Mono Light Italic'), url('../fonts/OperatorMono/OperatorMono-LightItalic.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Operator Mono Book';
+font-style: normal;
+font-weight: normal;
+src: local('Operator Mono Book'), url('../fonts/OperatorMono/OperatorMono-Book.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Operator Mono Book Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Operator Mono Book Italic'), url('../fonts/OperatorMono/OperatorMono-BookItalic.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Operator Mono Medium';
+font-style: normal;
+font-weight: normal;
+src: local('Operator Mono Medium'), url('../fonts/OperatorMono/OperatorMono-Medium.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Operator Mono Medium Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Operator Mono Medium Italic'), url('../fonts/OperatorMono/OperatorMono-MediumItalic.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Ubuntu Light';
+font-style: normal;
+font-weight: normal;
+src: local('Ubuntu Light'), url('../fonts/Ubuntu/Ubuntu-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Average Sans';
+  src: url('../fonts/Average_Sans/AverageSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Comic Neue';
+  src: url('../fonts/Comic_Neue/ComicNeue-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Comic Neue Bold';
+  src: url('../fonts/Comic_Neue/ComicNeue-Bold.ttf') format('truetype');
+}
